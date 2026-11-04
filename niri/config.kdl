@@ -703,6 +703,8 @@ environment {
     XCURSOR_THEME "Bibata-Modern-Ice"
     XCURSOR_SIZE "24"
     XCURSOR_PATH "/home/vladikusb/.local/share/icons:/home/vladikusb/.icons:/usr/share/icons"
+    QT_QPA_PLATFORMTHEME "xdgdesktopportal"
+    TDESKTOP_USE_GTK_FILE_DIALOG "1"
 }
 spawn-at-startup "dbus-update-activation-environment" "--systemd" "WAYLAND_DISPLAY" "XDG_CURRENT_DESKTOP=niri"
 spawn-at-startup "copyq" "--start-server"
