@@ -113,9 +113,6 @@ fastfetch
 # Терпеть не могу nano, только micro!
 export EDITOR=micro
 export VISUAL=micro
-alias nano='micro'  # Если вдруг привычка напишешь nano
-alias vim='micro'   # На всякий случай
-alias vi='micro'
 # Добавляем бинарники Rust (cargo) в PATH
 export PATH="$HOME/.cargo/bin:$PATH"
 
