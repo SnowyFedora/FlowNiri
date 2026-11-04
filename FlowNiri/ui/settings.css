@@ -1,0 +1,306 @@
+/* ============================================================
+   FlowNiri Settings — palette driven.
+   The colours (bg, bg_hard, bg_soft, bg_sel, border, fg, fg_strong,
+   fg_dim, gray, muted, accent, accent_2, red, red_bright, green,
+   green_bright, blue, purple, orange) are generated from the active
+   ~/.config/themes/<id>.theme file by settings.py, so this single
+   stylesheet renders correctly in both light and dark mode.
+
+   Note: GTK's CSS parser does NOT support "!important" — it drops
+   such declarations with a parser warning. Priority is therefore
+   forced the GTK way: "window ..." selectors outrank libadwaita's
+   plain "button" rules, and the provider is loaded with
+   STYLE_PROVIDER_PRIORITY_APPLICATION.
+   ============================================================ */
+
+window {
+    background-color: @bg;
+    color: @fg;
+}
+
+/* ================= САЙДБАР ================= */
+.sidebar {
+    background-color: @bg_hard;
+    border-right: 1px solid @bg_sel;
+    padding: 18px 0;
+}
+.sidebar list {
+    background: transparent;
+}
+.sidebar row {
+    padding: 9px 16px;
+    margin: 2px 8px;
+    border-radius: 8px;
+    color: @fg_dim;
+}
+.sidebar row:hover {
+    background-color: @bg_soft;
+    color: @fg_strong;
+}
+.sidebar row:selected {
+    background-color: @bg_sel;
+    color: @fg_strong;
+    box-shadow: inset 3px 0 @accent;
+}
+.sidebar image {
+    color: @fg;
+    margin-right: 10px;
+    opacity: 0.85;
+}
+.sidebar row:selected image {
+    color: @accent;
+    opacity: 1;
+}
+.sidebar .section {
+    color: @muted;
+    font-size: 11px;
+    font-weight: 800;
+    padding: 22px 16px 8px 16px;
+    letter-spacing: 1px;
+}
+.brand {
+    padding: 10px 16px 2px 16px;
+    color: @fg_strong;
+    font-weight: 800;
+    font-size: 18px;
+}
+.brand-sub {
+    color: @muted;
+    font-size: 12px;
+    padding: 0 16px 14px 16px;
+}
+
+/* ================= КОНТЕНТ ================= */
+.page {
+    padding: 28px 32px;
+}
+.h1 {
+    font-size: 24px;
+    font-weight: 800;
+    color: @fg_strong;
+}
+.sub {
+    color: @muted;
+    font-size: 13px;
+}
+.h2 {
+    font-size: 15px;
+    font-weight: 700;
+    color: @fg_strong;
+    margin-bottom: 4px;
+}
+.value {
+    color: @accent;
+    font-weight: 600;
+}
+.mono {
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 12px;
+    color: @fg_dim;
+}
+.dim {
+    color: @muted;
+}
+.accent-text {
+    color: @accent;
+}
+
+/* ================= КАРТОЧКИ ================= */
+.card {
+    background-color: @bg_soft;
+    border: 1px solid @border;
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 12px;
+}
+.row {
+    padding: 6px 0;
+}
+
+/* ================= КНОПКИ ================= */
+window button {
+    background-image: none;
+    background-color: @bg_sel;
+    border: 1px solid @border;
+    border-radius: 8px;
+    padding: 7px 16px;
+    color: @fg;
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow: none;
+    text-shadow: none;
+}
+window button:hover {
+    background-color: @border;
+    color: @fg_strong;
+}
+window button:active,
+window button:checked {
+    background-color: @accent;
+    border-color: @accent;
+    color: @bg_hard;
+}
+window button:disabled {
+    background-color: @bg_soft;
+    color: @muted;
+}
+window button.suggested {
+    background-color: @accent;
+    border-color: @accent;
+    color: @bg_hard;
+}
+window button.suggested:hover {
+    background-color: @accent_2;
+    border-color: @accent_2;
+    color: @bg_hard;
+}
+window button.danger {
+    background-color: @bg_sel;
+    border-color: @red;
+    color: @red_bright;
+}
+window button.danger:hover {
+    background-color: @red;
+    border-color: @red;
+    color: @fg_strong;
+}
+
+/* ================= ПОЛЯ ВВОДА ================= */
+window entry,
+window spinbutton,
+window dropdown button,
+window searchentry {
+    background-image: none;
+    background-color: @bg_hard;
+    border: 1px solid @border;
+    border-radius: 8px;
+    color: @fg;
+    padding: 7px 11px;
+    font-size: 13px;
+    box-shadow: none;
+}
+window entry:focus,
+window spinbutton:focus {
+    border-color: @accent;
+    box-shadow: 0 0 0 1px @accent;
+}
+window entry selection {
+    background-color: @accent;
+    color: @bg_hard;
+}
+
+/* ================= ЧЕКБОКСЫ И СВИТЧИ ================= */
+window checkbutton {
+    color: @fg;
+    font-size: 13px;
+    padding: 4px 0;
+}
+window checkbutton check {
+    background-color: @bg_hard;
+    border: 1px solid @border;
+    border-radius: 4px;
+}
+window checkbutton check:checked {
+    background-color: @accent;
+    color: @bg_hard;
+    border-color: @accent;
+}
+window switch {
+    background-color: @bg_sel;
+    border: 1px solid @border;
+    border-radius: 14px;
+    min-width: 40px;
+    min-height: 22px;
+}
+window switch:checked {
+    background-color: @accent;
+    border-color: @accent;
+}
+window switch > slider {
+    background-color: @fg;
+    border-radius: 14px;
+    min-width: 18px;
+    min-height: 18px;
+}
+window switch:checked > slider {
+    background-color: @bg_hard;
+}
+
+/* ================= ТЕКСТ И СКРОЛЛ ================= */
+textview,
+textview text {
+    background-color: @bg_hard;
+    color: @fg;
+}
+textview text {
+    padding: 10px;
+}
+scrollbar slider {
+    background-color: @bg_sel;
+    border-radius: 6px;
+    min-width: 8px;
+    min-height: 8px;
+}
+scrollbar slider:hover {
+    background-color: @gray;
+}
+
+/* ================= КАРТОЧКИ ТЕМ ================= */
+window button.theme-card {
+    background-color: @bg_hard;
+    border: 1px solid @border;
+    border-radius: 10px;
+    padding: 10px;
+}
+window button.theme-card:hover {
+    border-color: @accent;
+    background-color: @bg_soft;
+}
+window button.theme-card.active {
+    border: 2px solid @accent;
+    background-color: @bg_soft;
+}
+.theme-name {
+    font-size: 12px;
+    color: @fg;
+    margin-top: 8px;
+    font-weight: 600;
+}
+.theme-card.active .theme-name {
+    color: @fg_strong;
+}
+
+/* Цветные полоски палитры (классы .chip-<hex> генерирует settings.py) */
+.chip {
+    min-height: 42px;
+}
+.chip-first {
+    border-radius: 8px 0 0 8px;
+}
+.chip-last {
+    border-radius: 0 8px 8px 0;
+}
+
+.wp-preview {
+    background-color: @bg_hard;
+    border: 1px solid @border;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+/* ================= ФУТЕР ================= */
+.footer {
+    background-color: @bg_hard;
+    border-top: 1px solid @bg_sel;
+    padding: 9px 20px;
+    color: @muted;
+    font-size: 12px;
+}
+.footer .ok {
+    color: @green_bright;
+    font-weight: bold;
+}
+.footer .err {
+    color: @red_bright;
+    font-weight: bold;
+}

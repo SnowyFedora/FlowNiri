@@ -1,0 +1,26 @@
+# FlowNiri theme: One Dark
+# Hex values WITHOUT '#'. Every key must be unique inside a theme:
+# theme-switcher.sh swaps colours by value, so duplicates would cascade.
+NAME_RU="One Dark"
+NAME_EN="One Dark"
+GTK_THEME_NAME=FlowNiri-one-dark
+
+BG=282c34
+BG_HARD=21252b
+BG_SOFT=2c313a
+BG_SEL=3e4451
+BORDER=4b5263
+FG=abb2bf
+FG_STRONG=d7dae0
+FG_DIM=9da5b4
+GRAY=8b929f
+MUTED=5c6370
+ACCENT=e5c07b
+ACCENT_2=56b6c2
+RED=e06c75
+RED_BRIGHT=ef7a85
+GREEN=98c379
+GREEN_BRIGHT=a9d68a
+BLUE=61afef
+PURPLE=c678dd
+ORANGE=d19a66

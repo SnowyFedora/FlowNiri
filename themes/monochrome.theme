@@ -1,0 +1,26 @@
+# FlowNiri theme: Monochrome
+# Hex values WITHOUT '#'. Every key must be unique inside a theme:
+# theme-switcher.sh swaps colours by value, so duplicates would cascade.
+NAME_RU="Монохром"
+NAME_EN="Monochrome"
+GTK_THEME_NAME=FlowNiri-monochrome
+
+BG=1c1c1c
+BG_HARD=141414
+BG_SOFT=242424
+BG_SEL=303030
+BORDER=3d3d3d
+FG=d0d0d0
+FG_STRONG=f5f5f5
+FG_DIM=b4b4b4
+GRAY=8c8c8c
+MUTED=6a6a6a
+ACCENT=dedede
+ACCENT_2=b9b9b9
+RED=cf8c8c
+RED_BRIGHT=e0a0a0
+GREEN=9ec49e
+GREEN_BRIGHT=b4d8b4
+BLUE=8fa9c4
+PURPLE=b79ac4
+ORANGE=c4a48c

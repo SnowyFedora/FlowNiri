@@ -1,0 +1,185 @@
+/* ============================================================
+   waybar — Gruvbox Dark Medium
+   Quiet single-row bar: dark surface, muted text, one accent.
+   ============================================================ */
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", sans-serif;
+    font-size: 12px;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: #1c1c1c;
+    color: #d0d0d0;
+    border-bottom: 1px solid #303030;
+}
+
+/* ---- Workspaces ------------------------------------------- */
+#workspaces {
+    margin-left: 8px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+#workspaces button {
+    padding: 0 9px;
+    margin: 0 2px;
+    border-radius: 7px;
+    color: #8c8c8c;
+    background: transparent;
+}
+
+#workspaces button:hover {
+    background-color: #242424;
+    color: #d0d0d0;
+}
+
+#workspaces button.active {
+    color: #1c1c1c;
+    background-color: #dedede;
+    font-weight: bold;
+}
+
+#workspaces button.urgent {
+    color: #f5f5f5;
+    background-color: #cf8c8c;
+}
+
+/* ---- Focused window --------------------------------------- */
+#window {
+    color: #d0d0d0;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+#window.empty {
+    color: #6a6a6a;
+    font-weight: normal;
+}
+
+/* ---- Right-side modules ----------------------------------- */
+#niri-language,
+#network,
+#pulseaudio,
+#cpu,
+#memory,
+#battery,
+#clock,
+#custom-power {
+    padding: 0 9px;
+    margin: 0 1px;
+    color: #b4b4b4;
+}
+
+#niri-language {
+    color: #dedede;
+    font-weight: bold;
+}
+
+/* Wi-Fi / Ethernet */
+#network {
+    margin-left: 12px;
+    color: #8fa9c4;
+}
+
+#network.disconnected {
+    color: #e0a0a0;
+}
+
+/* Audio */
+#pulseaudio {
+    color: #9ec49e;
+}
+
+#pulseaudio.muted {
+    color: #e0a0a0;
+}
+
+/* CPU / RAM */
+#cpu {
+    color: #b4d8b4;
+}
+
+#memory {
+    color: #b79ac4;
+}
+
+/* Battery */
+#battery {
+    color: #b9b9b9;
+}
+
+#battery.charging,
+#battery.plugged {
+    color: #b4d8b4;
+}
+
+#battery.warning:not(.charging) {
+    color: #c4a48c;
+}
+
+#battery.critical:not(.charging) {
+    color: #e0a0a0;
+}
+
+#battery.urgent {
+    color: #e0a0a0;
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+    to {
+        color: #1c1c1c;
+        background-color: #e0a0a0;
+        border-radius: 6px;
+    }
+}
+
+/* Clock */
+#clock {
+    color: #b9b9b9;
+    font-weight: bold;
+}
+
+/* Power button */
+#custom-power {
+    color: #b4b4b4;
+    border-radius: 7px;
+    margin-right: 6px;
+}
+
+#custom-power:hover {
+    background-color: #cf8c8c;
+    color: #f5f5f5;
+}
+
+/* ---- Tray ------------------------------------------------- */
+#tray {
+    padding: 0 8px;
+    margin: 0 2px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: rgba(204, 36, 29, 0.5);
+    border-radius: 6px;
+}
+
+/* ---- Tooltip ---------------------------------------------- */
+tooltip {
+    background-color: #141414;
+    border: 1px solid #3d3d3d;
+    border-radius: 8px;
+}
+
+tooltip label {
+    color: #d0d0d0;
+    padding: 2px 4px;
+}

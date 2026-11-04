@@ -1,0 +1,7 @@
+[Unit]
+Description=FlowNiri AI usage probe (agents active)
+
+[Service]
+Type=oneshot
+ExecStart=%h/.config/scripts/ai-status.sh --mode active
+Nice=10

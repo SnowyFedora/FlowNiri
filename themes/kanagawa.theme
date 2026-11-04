@@ -1,0 +1,26 @@
+# FlowNiri theme: Kanagawa
+# Hex values WITHOUT '#'. Every key must be unique inside a theme:
+# theme-switcher.sh swaps colours by value, so duplicates would cascade.
+NAME_RU="Kanagawa"
+NAME_EN="Kanagawa"
+GTK_THEME_NAME=FlowNiri-kanagawa
+
+BG=1f1f28
+BG_HARD=16161d
+BG_SOFT=2a2a37
+BG_SEL=363646
+BORDER=54546d
+FG=dcd7ba
+FG_STRONG=eae4cf
+FG_DIM=c8c093
+GRAY=727169
+MUTED=5c5c66
+ACCENT=e6c384
+ACCENT_2=dca561
+RED=c34043
+RED_BRIGHT=ff5d62
+GREEN=98bb6c
+GREEN_BRIGHT=a9c47a
+BLUE=7e9cd8
+PURPLE=957fb8
+ORANGE=d27e99

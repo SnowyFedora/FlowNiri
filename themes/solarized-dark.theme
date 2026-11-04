@@ -1,0 +1,26 @@
+# FlowNiri theme: Solarized Dark
+# Hex values WITHOUT '#'. Every key must be unique inside a theme:
+# theme-switcher.sh swaps colours by value, so duplicates would cascade.
+NAME_RU="Solarized Тёмная"
+NAME_EN="Solarized Dark"
+GTK_THEME_NAME=FlowNiri-solarized-dark
+
+BG=002b36
+BG_HARD=001f27
+BG_SOFT=073642
+BG_SEL=0d4a57
+BORDER=2f4f5c
+FG=839496
+FG_STRONG=eee8d5
+FG_DIM=93a1a1
+GRAY=657b83
+MUTED=586e75
+ACCENT=b58900
+ACCENT_2=d33682
+RED=dc322f
+RED_BRIGHT=e35a57
+GREEN=859900
+GREEN_BRIGHT=9aad00
+BLUE=268bd2
+PURPLE=6c71c4
+ORANGE=cb4b16

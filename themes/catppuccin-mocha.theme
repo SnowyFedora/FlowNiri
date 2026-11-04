@@ -1,0 +1,26 @@
+# FlowNiri theme: Catppuccin Mocha
+# Hex values WITHOUT '#'. Every key must be unique inside a theme:
+# theme-switcher.sh swaps colours by value, so duplicates would cascade.
+NAME_RU="Catppuccin Mocha"
+NAME_EN="Catppuccin Mocha"
+GTK_THEME_NAME=FlowNiri-catppuccin-mocha
+
+BG=1e1e2e
+BG_HARD=11111b
+BG_SOFT=181825
+BG_SEL=313244
+BORDER=45475a
+FG=cdd6f4
+FG_STRONG=f5e0dc
+FG_DIM=bac2de
+GRAY=a6adc8
+MUTED=7f849c
+ACCENT=f9e2af
+ACCENT_2=fab387
+RED=f38ba8
+RED_BRIGHT=eba0ac
+GREEN=a6e3a1
+GREEN_BRIGHT=94e2d5
+BLUE=89b4fa
+PURPLE=cba6f7
+ORANGE=fe640b

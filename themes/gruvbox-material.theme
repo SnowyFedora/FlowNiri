@@ -1,0 +1,24 @@
+# FlowNiri theme: Gruvbox Material (dark, softer contrast)
+NAME_RU="Gruvbox Material"
+NAME_EN="Gruvbox Material"
+GTK_THEME_NAME=FlowNiri-gruvbox-material
+
+BG=32302f
+BG_HARD=1d2021
+BG_SOFT=3c3836
+BG_SEL=45403d
+BORDER=665c54
+FG=ddc7a1
+FG_STRONG=f2e5bc
+FG_DIM=d5c4a1
+GRAY=928374
+MUTED=7c6f64
+ACCENT=d79921
+ACCENT_2=fabd2f
+RED=ea6962
+RED_BRIGHT=dd3b3b
+GREEN=89b482
+GREEN_BRIGHT=a9b665
+BLUE=7daea3
+PURPLE=d3869b
+ORANGE=e78a80

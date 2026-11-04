@@ -1,0 +1,26 @@
+# FlowNiri theme: Dracula
+# Hex values WITHOUT '#'. Every key must be unique inside a theme:
+# theme-switcher.sh swaps colours by value, so duplicates would cascade.
+NAME_RU="Dracula"
+NAME_EN="Dracula"
+GTK_THEME_NAME=FlowNiri-dracula
+
+BG=282a36
+BG_HARD=21222c
+BG_SOFT=2b2d3a
+BG_SEL=44475a
+BORDER=4b4e68
+FG=f8f8f2
+FG_STRONG=ffffff
+FG_DIM=e6e6dc
+GRAY=b0b3c5
+MUTED=8b8fa8
+ACCENT=ffb86c
+ACCENT_2=f1fa8c
+RED=ff5555
+RED_BRIGHT=ff6e6e
+GREEN=50fa7b
+GREEN_BRIGHT=69ff94
+BLUE=8be9fd
+PURPLE=bd93f9
+ORANGE=ff79c6

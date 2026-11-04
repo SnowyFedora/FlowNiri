@@ -1,0 +1,26 @@
+# FlowNiri theme: Rose Pine
+# Hex values WITHOUT '#'. Every key must be unique inside a theme:
+# theme-switcher.sh swaps colours by value, so duplicates would cascade.
+NAME_RU="Rosé Pine"
+NAME_EN="Rose Pine"
+GTK_THEME_NAME=FlowNiri-rose-pine
+
+BG=191724
+BG_HARD=16141f
+BG_SOFT=1f1d2e
+BG_SEL=26233a
+BORDER=403d52
+FG=e0def4
+FG_STRONG=f4f1ff
+FG_DIM=c9c6dd
+GRAY=908caa
+MUTED=6e6a86
+ACCENT=f6c177
+ACCENT_2=ebbcba
+RED=eb6f92
+RED_BRIGHT=f28fae
+GREEN=9ccfd8
+GREEN_BRIGHT=bfe8ec
+BLUE=31748f
+PURPLE=c4a7e7
+ORANGE=ea9a97

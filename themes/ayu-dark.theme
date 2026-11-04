@@ -1,0 +1,26 @@
+# FlowNiri theme: Ayu Dark
+# Hex values WITHOUT '#'. Every key must be unique inside a theme:
+# theme-switcher.sh swaps colours by value, so duplicates would cascade.
+NAME_RU="Ayu Dark"
+NAME_EN="Ayu Dark"
+GTK_THEME_NAME=FlowNiri-ayu-dark
+
+BG=0b0e14
+BG_HARD=06080b
+BG_SOFT=11151c
+BG_SEL=1b1f28
+BORDER=2b3141
+FG=b3b1ad
+FG_STRONG=d9d7d0
+FG_DIM=9c9a95
+GRAY=7d7a75
+MUTED=5c6773
+ACCENT=e6b673
+ACCENT_2=ffb454
+RED=f07178
+RED_BRIGHT=ff8b92
+GREEN=aad94c
+GREEN_BRIGHT=c2e86b
+BLUE=59c2ff
+PURPLE=d2a6ff
+ORANGE=ffa759

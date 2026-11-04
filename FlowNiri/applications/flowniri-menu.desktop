@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=FlowNiri Menu
+Name[ru]=Меню FlowNiri
+Comment=Settings, themes, updates and rollback for the FlowNiri shell
+Comment[ru]=Настройки, темы, обновление и откат оболочки FlowNiri
+Exec=/home/vladikusb/.config/scripts/flowniri-menu.sh
+Icon=preferences-desktop
+Terminal=false
+StartupNotify=false
+Categories=Settings;DesktopSettings;System;
+Keywords=flowniri;settings;theme;update;rollback;настройки;тема;обновление;

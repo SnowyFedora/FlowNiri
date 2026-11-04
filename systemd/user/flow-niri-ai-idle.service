@@ -1,0 +1,7 @@
+[Unit]
+Description=FlowNiri AI usage probe (idle gate)
+
+[Service]
+Type=oneshot
+ExecStart=%h/.config/scripts/ai-status.sh --mode idle
+Nice=10

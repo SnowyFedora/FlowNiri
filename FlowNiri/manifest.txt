@@ -1,0 +1,71 @@
+# FlowNiri manifest — files owned by FlowNiri.
+# Paths are relative to ~/.config and are identical inside the release archive
+# (archive root: "FlowNiri/", so the payload is FlowNiri/<path>).
+# Only these files are ever overwritten by update.sh / rollback.
+# User state files (theme.name, lang.conf, ai.conf) are never overwritten.
+# Lines starting with '#' are comments.
+
+FlowNiri/manifest.txt
+FlowNiri/.version
+FlowNiri/packages.txt
+FlowNiri/lang.conf
+FlowNiri/theme.name
+FlowNiri/ai.conf
+FlowNiri/lib/common.sh
+FlowNiri/i18n/ru.conf
+FlowNiri/i18n/en.conf
+FlowNiri/templates/gtk4.css
+FlowNiri/ui/settings.py
+FlowNiri/ui/settings.css
+FlowNiri/qt.env
+FlowNiri/waybar-order.conf
+
+FlowNiri/applications/flowniri-menu.desktop
+FlowNiri/applications/flowniri-ai.desktop
+
+themes/ayu-dark.theme
+themes/catppuccin-macchiato.theme
+themes/catppuccin-mocha.theme
+themes/dracula.theme
+themes/everforest.theme
+themes/gruvbox-dark.theme
+themes/gruvbox-light.theme
+themes/gruvbox-material.theme
+themes/kanagawa.theme
+themes/monochrome.theme
+themes/nord.theme
+themes/one-dark.theme
+themes/rose-pine.theme
+themes/solarized-dark.theme
+themes/tokyonight.theme
+
+scripts/idle.sh
+scripts/theme-switcher.sh
+scripts/apply_theme-switcher.sh
+scripts/flowniri-menu.sh
+scripts/flowniri-settings.sh
+scripts/flowniri-cli.sh
+scripts/ai-status.sh
+scripts/ai-launcher.sh
+scripts/hotkeys.sh
+scripts/update.sh
+scripts/rollback.sh
+scripts/cleanup.sh
+scripts/osd.sh
+scripts/screenshot.sh
+scripts/record.sh
+scripts/system-update.sh
+scripts/wallpaper.sh
+scripts/power_menu.sh
+
+niri/config.kdl
+waybar/config.jsonc
+waybar/style.css
+waybar/scripts/layout.sh
+fuzzel/fuzzel.ini
+xdg-desktop-portal/niri-portals.conf
+
+systemd/user/flow-niri-ai-active.service
+systemd/user/flow-niri-ai-active.timer
+systemd/user/flow-niri-ai-idle.service
+systemd/user/flow-niri-ai-idle.timer

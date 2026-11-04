@@ -1,0 +1,14 @@
+# Packages FlowNiri relies on. update.sh checks them after installing a
+# release and reminds you to install what is missing — it never calls pacman
+# with sudo by itself and never ends your session.
+github-cli
+unzip
+jq
+libnotify
+wf-recorder
+udiskie
+pacman-contrib
+swayosd
+papirus-icon-theme
+ttf-jetbrains-mono-nerd
+ttf-nerd-fonts-symbols

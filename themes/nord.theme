@@ -1,0 +1,26 @@
+# FlowNiri theme: Nord
+# Hex values WITHOUT '#'. Every key must be unique inside a theme:
+# theme-switcher.sh swaps colours by value, so duplicates would cascade.
+NAME_RU="Nord"
+NAME_EN="Nord"
+GTK_THEME_NAME=FlowNiri-nord
+
+BG=2e3440
+BG_HARD=242933
+BG_SOFT=3b4252
+BG_SEL=434c5e
+BORDER=4c566a
+FG=d8dee9
+FG_STRONG=eceff4
+FG_DIM=e5e9f0
+GRAY=a3abbd
+MUTED=7b88a1
+ACCENT=88c0d0
+ACCENT_2=8fbcbb
+RED=bf616a
+RED_BRIGHT=d06f79
+GREEN=a3be8c
+GREEN_BRIGHT=b1d196
+BLUE=81a1c1
+PURPLE=b48ead
+ORANGE=d08770

@@ -1,0 +1,193 @@
+/* ============================================================
+   FlowNiri — generated GTK theme for zenity dialogs.
+   Do not edit: theme-switcher.sh regenerates this file from
+   ~/.config/themes/<theme>.theme
+   ============================================================ */
+
+@define-color theme_bg_color @BG@;
+@define-color theme_fg_color @FG@;
+@define-color theme_base_color @BG_HARD@;
+@define-color theme_text_color @FG@;
+@define-color theme_selected_bg_color @ACCENT@;
+@define-color theme_selected_fg_color @BG_HARD@;
+@define-color borders @BORDER@;
+@define-color accent_color @ACCENT@;
+@define-color accent_bg_color @ACCENT@;
+@define-color accent_fg_color @BG_HARD@;
+@define-color window_bg_color @BG@;
+@define-color window_fg_color @FG@;
+@define-color view_bg_color @BG_HARD@;
+@define-color view_fg_color @FG@;
+@define-color headerbar_bg_color @BG_SOFT@;
+@define-color headerbar_fg_color @FG@;
+@define-color popover_bg_color @BG_SOFT@;
+@define-color popover_fg_color @FG@;
+@define-color card_bg_color @BG_SOFT@;
+@define-color card_fg_color @FG@;
+@define-color error_color @RED_BRIGHT@;
+@define-color warning_color @ORANGE@;
+@define-color success_color @GREEN_BRIGHT@;
+
+* {
+    outline-color: @ACCENT@;
+}
+
+window,
+dialog,
+.background {
+    background-color: @BG@;
+    color: @FG@;
+}
+
+headerbar,
+.titlebar {
+    background-color: @BG_SOFT@;
+    background-image: none;
+    color: @FG@;
+    border-bottom: 1px solid @BORDER@;
+    box-shadow: none;
+    min-height: 34px;
+}
+
+headerbar .title,
+.titlebar .title {
+    color: @FG@;
+    font-weight: bold;
+}
+
+label {
+    color: @FG@;
+}
+
+label:disabled {
+    color: @MUTED@;
+}
+
+button {
+    background-image: none;
+    background-color: @BG_SEL@;
+    color: @FG@;
+    border: 1px solid @BORDER@;
+    border-radius: 8px;
+    padding: 5px 12px;
+    min-height: 20px;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+button:hover {
+    background-color: @BORDER@;
+    color: @FG_STRONG@;
+}
+
+button:active,
+button:checked,
+button:focus:checked {
+    background-color: @ACCENT@;
+    color: @BG_HARD@;
+    border-color: @ACCENT@;
+}
+
+button:disabled {
+    color: @MUTED@;
+    background-color: @BG@;
+}
+
+entry,
+spinbutton,
+searchentry,
+textview text {
+    background-color: @BG_HARD@;
+    color: @FG@;
+    border: 1px solid @BORDER@;
+    border-radius: 8px;
+    padding: 4px 8px;
+    caret-color: @ACCENT_2@;
+    box-shadow: none;
+}
+
+entry:focus,
+spinbutton:focus {
+    border-color: @ACCENT@;
+}
+
+combobox button,
+combobox box {
+    background-color: @BG_SEL@;
+    color: @FG@;
+    border-radius: 8px;
+}
+
+list,
+listview,
+.view,
+treeview.view {
+    background-color: @BG_HARD@;
+    color: @FG@;
+}
+
+row {
+    color: @FG@;
+}
+
+row:hover {
+    background-color: @BG_SOFT@;
+}
+
+row:selected,
+list row:selected,
+treeview.view:selected {
+    background-color: @ACCENT@;
+    color: @BG_HARD@;
+}
+
+scrollbar slider {
+    background-color: @BORDER@;
+    border-radius: 6px;
+    min-width: 6px;
+    min-height: 24px;
+}
+
+scrollbar slider:hover {
+    background-color: @ACCENT@;
+}
+
+separator {
+    background-color: @BORDER@;
+    min-width: 1px;
+    min-height: 1px;
+}
+
+checkbutton check,
+radiobutton radio {
+    border: 1px solid @BORDER@;
+    background-color: @BG_HARD@;
+}
+
+checkbutton check:checked,
+radiobutton radio:checked {
+    background-color: @ACCENT@;
+    color: @BG_HARD@;
+}
+
+progressbar trough {
+    background-color: @BG_HARD@;
+    border-radius: 6px;
+}
+
+progressbar progress {
+    background-color: @ACCENT@;
+    border-radius: 6px;
+}
+
+tooltip {
+    background-color: @BG_SOFT@;
+    color: @FG@;
+    border: 1px solid @BORDER@;
+    border-radius: 8px;
+}
+
+link,
+*:link {
+    color: @BLUE@;
+}

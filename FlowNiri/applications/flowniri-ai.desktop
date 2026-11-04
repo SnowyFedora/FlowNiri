@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Name=FlowNiri AI Monitor
+Name[ru]=FlowNiri ИИ-монитор
+Comment=Usage status of OpenCode, Claude Code, Codex and Kimi Code
+Comment[ru]=Состояние и расход OpenCode, Claude Code, Codex и Kimi Code
+Exec=/home/vladikusb/.config/scripts/ai-launcher.sh
+Icon=applications-science
+Terminal=false
+StartupNotify=false
+Categories=Utility;Development;
+Keywords=ai;usage;opencode;claude;codex;kimi;

@@ -1,0 +1,98 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 26,
+    "margin-top": 0,
+    "margin-left": 0,
+    "margin-right": 0,
+    "spacing": 0,
+
+    "modules-left": ["niri/workspaces"],
+    "modules-center": ["niri/window"],
+    "modules-right": ["niri/language", "network", "pulseaudio", "cpu", "memory", "battery", "clock", "tray", "custom/power", "custom/ai-status"],
+
+    "niri/workspaces": {
+        "format": "{index}",
+        "active-only": false,
+        "all-outputs": true
+    },
+
+    "niri/window": {
+        "max-length": 40,
+        "format": "{title}"
+    },
+
+    "niri/language": {
+        "format": "󰌌 {short}",
+        "on-click": "niri msg action switch-layout next"
+    },
+
+    "network": {
+        "format-wifi": "{icon}",
+        "format-ethernet": "󰈀",
+        "format-disconnected": "󰤭",
+        "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+        "tooltip-format": "{essid} ({signalStrength}%) 󰤨\n{ipaddr}/{cidr}",
+        "on-click": "nm-connection-editor"
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "󰝟 muted",
+        "format-icons": {
+            "default": ["󰕿", "󰖀", "󰕾"]
+        },
+        "scroll-step": 5,
+        "on-click": "pavucontrol",
+        "tooltip-format": "Volume: {volume}%"
+    },
+
+    "cpu": {
+        "format": "󰻠 {usage}%",
+        "interval": 1,
+        "on-click": "alacritty -e btop"
+    },
+
+    "memory": {
+        "format": "󰍛 {percentage}%",
+        "interval": 1,
+        "on-click": "alacritty -e btop"
+    },
+
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": "󰂄 {capacity}%",
+        "format-plugged": "󰂄 {capacity}%",
+        "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+        "on-click": "alacritty -e upower -i $(upower -e | grep 'BAT')"
+    },
+
+    "clock": {
+        "format": "󰥔 {:%H:%M}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "on-click": "sh -c 'GTK_THEME=Adwaita:dark gsimplecal'"
+    },
+
+    "tray": {
+        "icon-size": 14,
+        "spacing": 6
+    },
+
+    "custom/power": {
+        "format": "⏻ ",
+        "tooltip": true,
+        "tooltip-format": "Power Menu",
+        "on-click": "~/.config/scripts/power_menu.sh"
+    },
+    "custom/ai-status": {
+        "exec": "/home/vladikusb/.config/scripts/ai-status.sh --waybar",
+        "return-type": "json",
+        "interval": 30,
+        "tooltip": true,
+        "on-click": "/home/vladikusb/.config/scripts/ai-launcher.sh"
+    }
+}

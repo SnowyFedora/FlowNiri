@@ -1,0 +1,63 @@
+# ============================================================
+#  mako — notification daemon
+#  Gruvbox Dark Medium, matches waybar / fuzzel / alacritty
+# ============================================================
+
+# ---- Typography -------------------------------------------
+font=JetBrainsMono Nerd Font 10
+text-color=#ebdbb2
+markup=1
+
+# ---- Geometry ---------------------------------------------
+width=380
+height=180
+margin=10
+padding=14
+border-size=2
+border-radius=12
+outer-margin=16
+anchor=top-right
+layer=overlay
+max-visible=5
+max-icon-size=48
+icon-border-radius=8
+icon-location=left
+
+# ---- Behaviour --------------------------------------------
+icons=1
+history=1
+max-history=20
+sort=-time
+group-by=app-name
+on-button-left=invoke-default-action
+on-button-middle=none
+on-button-right=dismiss
+on-touch=dismiss
+
+# ---- Default style (normal urgency) -----------------------
+background-color=#282828f2
+border-color=#d79921ff
+progress-color=over #b8bb26ff
+default-timeout=8000
+ignore-timeout=0
+format=<b>%s</b>\n<span foreground="#a89984">%b</span>
+
+# ---- Low urgency ------------------------------------------
+[urgency=low]
+background-color=#282828f2
+border-color=#504945ff
+text-color=#d5c4a1
+default-timeout=5000
+
+# ---- Normal urgency ---------------------------------------
+[urgency=normal]
+background-color=#282828f2
+border-color=#d79921ff
+text-color=#ebdbb2
+
+# ---- Critical urgency -------------------------------------
+[urgency=critical]
+background-color=#3c1f1fff
+border-color=#cc241dff
+text-color=#fbf1c7
+default-timeout=0

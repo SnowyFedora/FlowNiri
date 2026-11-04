@@ -1,0 +1,11 @@
+[Unit]
+Description=FlowNiri AI probe when no agent is active (5m tick, 15m gate)
+
+[Timer]
+OnActiveSec=2min
+OnUnitActiveSec=5min
+AccuracySec=30s
+Unit=flow-niri-ai-idle.service
+
+[Install]
+WantedBy=timers.target
