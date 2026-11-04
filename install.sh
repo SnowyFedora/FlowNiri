@@ -144,6 +144,34 @@ install_wallpapers() {
     fi
 }
 
+# --------------------------------------------------------------- cursors ---
+install_cursors() {
+    [ -d "$REPO/cursors" ] || return 0
+    
+    run mkdir -p "$HOME/.local/share/icons"
+    
+    local archive
+    for archive in "$REPO/cursors/"*.tar.xz "$REPO/cursors/"*.tar.gz "$REPO/cursors/"*.zip; do
+        [ -f "$archive" ] || continue
+        if [ "$DRY_RUN" -eq 1 ]; then
+            printf '[dry-run] extract %s -> %s\n' "$archive" "$HOME/.local/share/icons"
+        else
+            case "$archive" in
+                *.tar.xz) tar -xJf "$archive" -C "$HOME/.local/share/icons/" ;;
+                *.tar.gz) tar -xzf "$archive" -C "$HOME/.local/share/icons/" ;;
+                *.zip)    unzip -o "$archive" -d "$HOME/.local/share/icons/" >/dev/null ;;
+            esac
+        fi
+    done
+    
+    # Принудительно применяем курсор
+    if [ "$DRY_RUN" -eq 0 ] && command -v gsettings >/dev/null 2>&1; then
+        gsettings set org.gnome.desktop.interface cursor-theme 'Bibata-Modern-Ice' 2>/dev/null || true
+        gsettings set org.gnome.desktop.interface cursor-size 24 2>/dev/null || true
+    fi
+    ok "Cursor theme installed (Bibata-Modern-Ice)."
+}
+
 # ------------------------------------------------------- desktop entries --
 install_desktop_entries() {
     [ -d "$REPO/FlowNiri/applications" ] || return 0
@@ -199,6 +227,7 @@ printf '\n\033[1mFlowNiri installer\033[0m — %s\n\n' "$REPO"
 backup_existing
 install_configs
 install_wallpapers
+install_cursors
 install_desktop_entries
 rewrite_paths
 enable_timers
