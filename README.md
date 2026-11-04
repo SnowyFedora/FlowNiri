@@ -83,6 +83,7 @@ shell, without `swayosd` the OSD falls back to `notify-send`/`mako`, and so on.
 ```bash
 git clone https://github.com/SnowyFedora/FlowNiri.git ~/FlowNiri
 cd ~/FlowNiri
+chmod +x install.sh
 ./install.sh
 ```
 
@@ -783,6 +784,7 @@ PyGObject. Всё остальное — обычный Bash и нескольк
 ```bash
 git clone https://github.com/SnowyFedora/FlowNiri.git ~/FlowNiri
 cd ~/FlowNiri
+chmod +x install.sh
 ./install.sh
 ```
 
